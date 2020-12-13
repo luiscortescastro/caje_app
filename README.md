@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # caje_app
 
 > A Vue.js project
@@ -19,3 +20,6 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+# caje_app
+>>>>>>> 3d7f2201bf6256af345244c41ce8cea34690a977
