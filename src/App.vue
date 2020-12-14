@@ -3,10 +3,10 @@
       <div class="header">
         <h1>Banco UN</h1>
         <nav>
-          <button v-on:click="init" v-if="is_auth"> Inicio </button>  
-          <button v-on:click="getBalance" v-if="is_auth"> Saldo </button>
-          <button v-if="is_auth"> Transacción </button>
-          <button v-if="is_auth">Cerrar Sesión</button>
+          <button v-on:click="init" v-if="is_Auth"> Inicio </button>  
+          <button v-on:click="getBalance" v-if="is_Auth"> Saldo </button>
+          <button v-if="is_Auth"> Transacción </button>
+          <button v-if="is_Auth">Cerrar Sesión</button>
         </nav>
       </div>
     
@@ -25,7 +25,7 @@
     components: {},
     data: function(){
       return {
-        is_auth: localStorage.getItem('isAuth') || false
+        is_Auth: localStorage.getItem('isAuth') || false
       }
     },
     methods: {
@@ -63,8 +63,8 @@
     width: 100%;
     height: 10vh;
     min-height: 100px;
-    background-color: #112220 ;
-    color:#8bb3db ;
+    background-color: #141d1c ;
+    color:#E5E7E9 ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +90,7 @@
   }
   .header nav button:hover{
     color: #283747;
-    background: #b3d615;
+    background: #E5E7E9;
     border: 1px solid #E5E7E9;
   }
   .main-component{
