@@ -35,21 +35,22 @@
               // let username = "andres18"
               this.$router.push({name: "user_prueba", params:{username:username}})
             }
-          },
+      },
       
       getBalance: function(){
-        if(this.$route.name != "user_balance"){
-            let username = localStorage.getItem("current_username")
-            this.$router.push({ name:"user_balance",  params:{username:username}})
-        }
-        },
-        beforeCreate: function(){
-          let username = "camilo24"
-          localStorage.setItem('current_username', username)
-          localStorage.setItem('isAuth', true)
-          this.$router.push({name:"user_prueba",params:{username:username}})
-        }  
-    }
+          if(this.$route.name != "user_balance"){
+              let username = localStorage.getItem("current_username")
+              this.$router.push({ name:"user_balance",  params:{username:username}})
+          }
+      }  
+    },
+    beforeCreate: function(){
+      let username = "camilo24"
+      localStorage.setItem('current_username', username)
+      localStorage.setItem('isAuth', true)
+      this.$router.push({name:"user_prueba",params:{username:username}})
+    }  
+    
   }
 </script>
 
